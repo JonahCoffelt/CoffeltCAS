@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Coffelt CAS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="active-nav-link">
+                    <a href="experiences.html">Experiences</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="experiences.html">CAS Project</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="name-wrapper">
+                    <div>JONAH COFFELT</div>
+                </div>
+            </div>
+        </div>
+        <div class="experiences-wrapper">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+                    <div class="slide first">
+                        <img src="images/CASExpHiking.jpg" alt="" id="img1">
+                        <div class="img-text-wrapper" id="txt1">
+                            <h1>Experience 1: Hiking</h1>
+                            <h2>Creativity & Activity</h2>
+                            <h2>Learning Outcomes 1, 4, 6</h2>
+                            <div class="subtitle">
+                                This activity involved us hiking in a park and taking pictures of the nature around us. This was a new experience for me, as I only go hiking with my family a couple of times a year, and never in a group such as this one. It was also new for me, as I do not often take pictures of nature, so it was a fun thing for me to try out. Planning the experience was not as smooth as I would have hoped for it to be, but it was effective, we all were able to get there, and it was fairly well planned for a first CAS experience. Working as a group definitely made the experience more enjoyable, as it was pleasing to share the experience with a group of close friends. Additionally, working with a group on this made it much easier to follow through with the plan allowing everyone to have a better time than we would have had we done it alone. Overall I feel as though it was a great experience to grow, and learn more about nature, photography, and hiking as a whole. This experience is definitely one that I would consider doing a second time, and many more beyond that. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio2.jpg" alt="" id="img2">
+                        <div class="img-text-wrapper" id="txt2">
+                            <h1>Experience 1: Hiking</h1>
+                            <h2>Activity</h2>
+                            <h2>Learning Outcomes 1, 4, 6</h2>
+                            <div class="subtitle">
+                                This will have my experience reflection
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio3.jpg" alt="" id="img3">
+                        <div class="img-text-wrapper" id="txt3">
+                            <h1>Experience 1: Hiking</h1>
+                            <h2>Activity</h2>
+                            <h2>Learning Outcomes 1, 4, 6</h2>
+                            <div class="subtitle">
+                                This will have my experience reflection
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio4.jpg" alt="" id="img4">
+                        <div class="img-text-wrapper" id="txt4">
+                            <h1>Experience 1: Hiking</h1>
+                            <h2>Activity</h2>
+                            <h2>Learning Outcomes 1, 4, 6</h2>
+                            <div class="subtitle">
+                                This will have my experience reflection
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio2.jpg" alt="" id="img5">
+                        <div class="img-text-wrapper" id="txt5">
+                            <h1>Experience 1: Hiking</h1>
+                            <h2>Activity</h2>
+                            <h2>Learning Outcomes 1, 4, 6</h2>
+                            <div class="subtitle">
+                                This will have my experience reflection
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio3.jpg" alt="" id="img6">
+                        <div class="img-text-wrapper" id="txt6">
+                            <h1>Experience 1: Hiking</h1>
+                            <h2>Activity</h2>
+                            <h2>Learning Outcomes 1, 4, 6</h2>
+                            <div class="subtitle">
+                                This will have my experience reflection
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio4.jpg" alt="" id="img7">
+                        <div class="img-text-wrapper" id="txt7">
+                            <h1>Experience 1: Hiking</h1>
+                            <h2>Activity</h2>
+                            <h2>Learning Outcomes 1, 4, 6</h2>
+                            <div class="subtitle">
+                                This will have my experience reflection
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn" id="manual-btn1"></label>
+                    <label for="radio2" class="manual-btn" id="manual-btn2"></label>
+                    <label for="radio3" class="manual-btn" id="manual-btn3"></label>
+                    <label for="radio4" class="manual-btn" id="manual-btn4"></label>
+                    <label for="radio5" class="manual-btn" id="manual-btn5"></label>
+                    <label for="radio6" class="manual-btn" id="manual-btn6"></label>
+                    <label for="radio7" class="manual-btn" id="manual-btn7"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('radio1').checked = true;
+        document.getElementById('img1').style.filter = "brightness(30%)";
+        document.getElementById('img1').classList.add("img-darken")
+        setInterval(function(){
+            for (let i = 1;i < 8;i ++){
+                if (document.getElementById('radio' + i).checked){
+                    document.getElementById('txt' + i).style.transition = '4s';
+                    document.getElementById('txt' + i).style.opacity = "1.0";
+                    document.getElementById('img' + i).style.filter = "brightness(30%)";
+                    document.getElementById('img' + i).classList.add("img-darken")
+                    document.getElementById('manual-btn' + i).style.backgroundColor = "#40d3dc";
+
+                }
+                else {
+                    document.getElementById('txt' + i).style.transition = "1s";
+                    document.getElementById('txt' + i).style.opacity = "0.0";
+                    document.getElementById('img' + i).style.filter = "brightness(100%)";
+                    document.getElementById('manual-btn' + i).style.backgroundColor = "transparent";
+                }
+            }
+        })
+    </script>
+</body>
+</html>
