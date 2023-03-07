@@ -124,6 +124,12 @@
         })
 
         function inputDown(e) {
+            if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                e.preventDefault();
+            }
+            if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                e.preventDefault();
+            }
             if(e.key == "ArrowLeft" || e.key == "a") {
                 if (!fired){
                     for (let i = 1;i < (slides_num + 1);i ++){
@@ -153,6 +159,12 @@
             } 
         }
         function inputUp(e) {
+            if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                e.preventDefault();
+            }
+            if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                e.preventDefault();
+            }  
             if(e.key == "ArrowLeft" || e.key == "a" || e.key == "ArrowRight" || e.key == "d") {
                 if (fired){
                     fired = false
