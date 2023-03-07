@@ -251,8 +251,17 @@ body {
     margin-top: -10px;
 }
 
+.project-subtitle {
+    color: white;
+    font-size: larger;
+}
+
+.project-h2 {
+    color: rgb(157, 255, 242);
+    font-size: x-large;
+}
 
 .img-darken {
     transition: 4s;
-    filter: brightness(30%);
+    filter: brightness(25%);
 }
