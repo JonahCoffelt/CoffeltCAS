@@ -261,6 +261,35 @@ body {
     font-size: x-large;
 }
 
+.evidence-wrapper {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    top: 93vh;
+    justify-content: center;
+}
+
+.evidence-link{
+    margin-left: 10px;
+    transition: 1s;
+    background-color: white;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+
+.evidence-link:hover{
+    background-color: rgb(255, 255, 175);
+    border: 1px solid black;
+}
+
+.evidence-link a{
+    text-decoration: None;
+    color: black
+}
+
 .img-darken {
     transition: 4s;
     filter: brightness(25%);
